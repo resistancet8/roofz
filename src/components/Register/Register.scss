@@ -1,0 +1,38 @@
+.register-login-modal {
+  border-radius: 0 !important;
+  width: 400px !important;
+  min-height: 400px !important;
+
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 22px;
+    font-weight: bold;
+    
+    .login, .register {
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 10px;
+      &.active {
+        color: #2185d0;
+        border-bottom: 2px solid #2185d0;
+      }
+      &:hover {
+        color: #2185d0;
+      }
+    }
+
+    .login {
+      margin-right: 20px;
+    }
+  }
+}

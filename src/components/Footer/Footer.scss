@@ -1,0 +1,22 @@
+#footer {
+  background: #303b43;
+  padding: 30px;
+  color: #ffffff;
+  min-height: 200px;
+
+  ul {
+    .foot_hding {
+      list-style: none;
+      font-size: 18px;
+      font-weight: bold;
+      color: #eee;
+    }
+
+    li {
+      list-style: none;
+      a {
+        color: #999999;
+      }
+    }
+  }
+}

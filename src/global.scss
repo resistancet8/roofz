@@ -1,0 +1,21 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+body, html {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  background: #f1f1f1 !important;
+}

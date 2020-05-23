@@ -1,0 +1,134 @@
+@import "./../../variables";
+
+#homepage {
+  .banner {
+    width: 100%;
+    margin-top: 100px;
+    height: 70vh;
+    position: relative;
+
+    .menu {
+      .item {
+        color: #222222;
+      }
+
+      .active {
+        background: $primary-color;
+        color: white;
+      }
+    }
+
+    .active.tab {
+      border: 0;
+      border-radius: 0;
+      height: 50px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .finder {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba($color: #fff, $alpha: 0.5);
+      width: 1000px;
+      padding: 50px 100px;
+      border-radius: 5px;
+      text-align: center;
+
+      h1 {
+        font-weight: bold;
+        color: #111111;
+        font-size: 3em;
+      }
+      p {
+        color: #222222;
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 25px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  #latest-properties {
+
+    .section-header {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .section-sub-header {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    .slide-element {
+      width: 235px !important;
+      background: #fff;
+      cursor: pointer;
+
+      .info {
+        padding: 10px;
+
+        .price {
+          font-size: 18px;
+          font-weight: bold;
+          margin-top: 5px;
+        }
+
+        .title {
+          font-weight: bold;
+          font-size: 16px;
+        }
+
+        .subTitle {
+          line-height: 20px;
+          color: rgb(127, 127, 127);
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+
+        .details {
+          margin-top: 19px;
+          display: flex;
+          line-height: 18px;
+          white-space: nowrap;
+
+          .detail {
+            padding: 0px 18px;
+            border-right: 1px solid rgb(230, 230, 230);
+
+            &:first-of-type {
+              padding-left: 0px;
+            }
+
+            &:last-of-type {
+              padding-right: 0px;
+              border-right: 0px;
+            }
+
+            .label {
+              color: rgb(155, 155, 155);
+            }
+
+            .ans {
+              margin-top: 4px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 0px 5px #00000022;
+      }
+    }
+  }
+}
